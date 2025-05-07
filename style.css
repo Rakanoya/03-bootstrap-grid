@@ -1,0 +1,52 @@
+:root {
+  --primary-color: #6c757d; /* Neutral gray */
+  --secondary-color: #f8f9fa; /* Light neutral background */
+  --accent-color: #ff7f50; /* Warm coral accent */
+  --text-color: #343a40; /* Dark gray for text */
+  --muted-color: #e9ecef; /* Muted light gray */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+header {
+  padding: 2rem 0;
+}
+
+.row.g-4 > .col {
+  display: flex;
+}
+
+.card {
+  flex: 1;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: var(--muted-color);
+  color: var(--primary-color);
+  font-size: 0.9rem;
+}
+
+h5 {
+  color: var(--primary-color);
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+  background-color: darken(var(--accent-color), 10%);
+  border-color: darken(var(--accent-color), 10%);
+}
